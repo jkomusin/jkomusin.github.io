@@ -19,18 +19,11 @@
 </head>
 <body>
 	<header>
-		<h1>Image Comparison Slider</h1>
+	    <h1>Image Comparison</h1>
 	</header>
-	<figure class="cd-image-container">
-		<img src="https://live.staticflickr.com/65535/53463875462_9d2948ba92_o_d.jpg" alt="Before Image">
-		<span class="cd-image-label" data-type="original">Before</span>
-
-		<div class="cd-resize-img"> <!-- the resizable image on top -->
-			<img src="https://live.staticflickr.com/65535/53464903733_da0c6ea4bf_o_d.jpg" alt="After Image">
-			<span class="cd-image-label" data-type="modified">After</span>
-		</div>
-
-		<span class="cd-handle"></span>
-	</figure> <!-- cd-image-container -->
+	<img-comparison-slider>
+            <img slot="first" src="https://live.staticflickr.com/65535/53463875462_c07ced4119_k_d.jpg" />
+            <img slot="second" src="https://live.staticflickr.com/65535/53464903733_e8c23b5c54_k_d.jpg" />
+        </img-comparison-slider>
 </body>
 </html>
