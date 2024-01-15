@@ -1,13 +1,36 @@
-<script
-  defer
-  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
-></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
-/>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<img-comparison-slider>
-  <img slot="first" src="https://live.staticflickr.com/65535/53463875462_9d2948ba92_o_d.jpg" />
-  <img slot="second" src="https://live.staticflickr.com/65535/53464903733_da0c6ea4bf_o_d.jpg" />
-</img-comparison-slider>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<script
+    defer
+    src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+  />
+  	
+	<title>Image Comparison</title>
+</head>
+<body>
+	<header>
+		<h1>Image Comparison Slider</h1>
+	</header>
+	<figure class="cd-image-container">
+		<img src="https://live.staticflickr.com/65535/53463875462_9d2948ba92_o_d.jpg" alt="Before Image">
+		<span class="cd-image-label" data-type="original">Before</span>
+
+		<div class="cd-resize-img"> <!-- the resizable image on top -->
+			<img src="https://live.staticflickr.com/65535/53464903733_da0c6ea4bf_o_d.jpg" alt="After Image">
+			<span class="cd-image-label" data-type="modified">After</span>
+		</div>
+
+		<span class="cd-handle"></span>
+	</figure> <!-- cd-image-container -->
+</body>
+</html>
